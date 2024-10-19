@@ -44,6 +44,21 @@ internal class Program
         roman2.AfficherDetails();
         roman3.AfficherDetails();
 
+        Console.WriteLine();
+        //Gérer les instances de ces classes
 
+        List<Livre> livres = new List<Livre>(); //liste générique de type Livre
+        livres.Add(revue1);
+        livres.Add(revue2);
+        livres.Add(revue3);
+        livres.Add(roman1);
+        livres.Add(roman2);
+        livres.Add(roman3);
+        Console.WriteLine("********Revues et livres********");
+        Console.WriteLine();
+        foreach (Livre livre in livres)
+        {
+            livre.AfficherDetails();
+        }
     }
 }
