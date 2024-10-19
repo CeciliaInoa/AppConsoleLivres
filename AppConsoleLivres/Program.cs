@@ -54,7 +54,7 @@ internal class Program
         livres.Add(roman1);
         livres.Add(roman2);
         livres.Add(roman3);
-        Console.WriteLine("********Revues et livres********");
+        Console.WriteLine("********Revues et romans********");
         Console.WriteLine();
         foreach (Livre livre in livres)
         {
