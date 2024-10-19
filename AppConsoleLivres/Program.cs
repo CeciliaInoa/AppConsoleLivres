@@ -12,6 +12,7 @@ internal class Program
     {
 
         Console.WriteLine("Solution Gestion des livres");
+        Console.WriteLine();
 
         //Création trois instances de la classe Revue
 
@@ -19,10 +20,30 @@ internal class Program
        Revue revue2 = new Revue("Pandora","Caribe", 31, 357, 2024);
        Revue revue3 = new Revue("Mercado","Mercado Media Network", 210, 502, 2024);
 
-       //Affichage des détails de ces objets 
+       Console.WriteLine("*********Revues*********");
+       Console.WriteLine();
+
+        //Affichage des détails des objets Revue
 
        revue1.AfficherDetails();
        revue2.AfficherDetails();
        revue3.AfficherDetails();
+       Console.WriteLine();
+
+        //Création trois instances de la classe Roman
+
+        Roman roman1 = new Roman("To All the Boys I've Loved Before", "Jenny Han", 384, "Romance");
+        Roman roman2 = new Roman("All The Bright Places", "Jennifer Niven", 416, "Romance");
+        Roman roman3 = new Roman("Paula", "Isabel Allende", 368, "Mémoire");
+
+        Console.WriteLine("*********Romans*********");
+        Console.WriteLine();
+        //Affichage des détails des objets Roman
+
+        roman1.AfficherDetails();
+        roman2.AfficherDetails();
+        roman3.AfficherDetails();
+
+
     }
 }
